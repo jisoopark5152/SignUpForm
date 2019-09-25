@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SignUpForm</string>
+    <string name="flnameerr">Enter your full name</string>
+    <string name="emailerr">Enter valid email</string>
+    <string name="passworderr">Enter password</string>
+    <string name="passwordconfirmerr">Password do not match</string>
+</resources>
