@@ -36,8 +36,8 @@ public class FormActivity extends AppCompatActivity {
         passwordconfirm = (EditText)findViewById(R.id.passwordconfirm);
         save = (Button)findViewById(R.id.save);
 
-        String regexPassword = "(?=.*[a-z])(?=.*[A-Z])(?=.*[\\\\d])(?=.*[~`!@#\\\\$%\\\\^&\\\\(\\\\)\\\\-_\\\\+=\\\\{\\\\}\\\\[\\\\]\\\\|\\\\;:\\";
-        awesomeValidation.addValidation(FormActivity.this,R.id.flname, "a-zA-z\\\\s]+",R.string.flnameerr);
+        String regexPassword = "(?=.*[a-z])(?=.*[A-Z])";
+        awesomeValidation.addValidation(FormActivity.this,R.id.flname, "[a-z][A-Z]",R.string.flnameerr);
         awesomeValidation.addValidation(FormActivity.this,R.id.email, android.util.Patterns.EMAIL_ADDRESS,R.string.emailerr);
         awesomeValidation.addValidation(FormActivity.this,R.id.password,regexPassword,R.string.passworderr);
         awesomeValidation.addValidation(FormActivity.this,R.id.passwordconfirm,R.id.password,R.string.passwordconfirmerr);
